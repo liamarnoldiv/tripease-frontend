@@ -5,7 +5,7 @@ form.addEventListener('submit', async (e) => {
   e.preventDefault();
   resultDiv.textContent = "Planning your trip... please wait!";
 
-  const response = await fetch(https://tripease-backend.onrender.com, {
+  const response = await fetch('https://tripease-backend.onrender.com/generate-itinerary', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
